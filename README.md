@@ -10,9 +10,9 @@ Turn any file into an image.<br><br>
 
 ## Install
 ### Windows
-- Get the executable <a href="#">here</a> (29MB)
+- Get the executable <a href="https://drive.google.com/uc?export=download&id=19Wn2daojF2pO8OipSHfC8MNaOYvwrG4I">here</a> (29MB)
 - Unzip the PNGz Encryptor.rar file and run the PNGz Encryptor.exe
 
 ### Other OSes
-- Get the <a href="#">JAR file + JRE</a> (29MB)
+- Get the <a href="https://drive.google.com/uc?export=download&id=1Dl8fhkeOOvESjTZoqt1sreJ7dR__EEgn">JAR file + JRE</a> (29MB)
 - Get the <a href="https://drive.google.com/uc?export=download&id=1tAIT6ipj9n2dRYCzuKXNbIlpPiONsWEp">JAR file</a>       (60KB)
