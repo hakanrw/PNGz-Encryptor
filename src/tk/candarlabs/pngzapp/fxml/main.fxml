@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="64.0" layoutY="14.0" prefHeight="54.0" prefWidth="750.0" style="-fx-background-color: #555555;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="57.0" layoutY="16.0" text="PNGz Encryptor" textFill="#e5e5e5">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER_RIGHT" layoutX="407.0" layoutY="8.0" prefHeight="38.0" prefWidth="290.0" spacing="20.0" AnchorPane.rightAnchor="52.0">
+               <children>
+                  <Label styleClass="nav-button" text="Encoder" textFill="#e5e5e5">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets right="5.0" />
+                     </padding>
+                  </Label>
+                  <HBox fx:id="webbutton" alignment="CENTER">
+                     <children>
+                        <Label styleClass="nav-button" text="Website" textFill="#bab1b1">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox fx:id="aboutbutton" alignment="CENTER">
+                     <children>
+                        <Label styleClass="nav-button" text="About" textFill="#bab1b1">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets left="5.0" right="5.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <ImageView fitHeight="38.0" fitWidth="42.0" layoutX="10.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/image.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="445.0" prefHeight="28.0" prefWidth="750.0" style="-fx-background-color: #555555;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label layoutX="20.0" layoutY="6.0" text="Candar Labs 2020" textFill="#e5e5e5">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <HBox alignment="CENTER" layoutX="175.0" layoutY="55.0" prefHeight="417.0" prefWidth="750.0" AnchorPane.bottomAnchor="27.399999999999977" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="55.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="418.0" prefWidth="536.0">
+               <children>
+                  <AnchorPane fx:id="mainbar" prefHeight="327.0" prefWidth="536.0" style="-fx-background-radius: 15; -fx-background-color: E0DCD8;" stylesheets="@styles.css">
+                     <children>
+                        <AnchorPane fx:id="paneinput" layoutX="25.0" layoutY="62.0" prefHeight="150.0" prefWidth="150.0" styleClass="box" AnchorPane.leftAnchor="25.0">
+                           <children>
+                              <ImageView fx:id="imginput" fitHeight="140.0" fitWidth="140.0" layoutX="7.2" layoutY="5.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="7.2" AnchorPane.rightAnchor="7.200000000000017" AnchorPane.topAnchor="7.0" />
+                              <ImageView fx:id="imgdrop" fitHeight="90.0" fitWidth="90.0" layoutX="32.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                 <image>
+                                    <Image url="@../img/hand.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="360.6000061035156" layoutY="62.0" prefHeight="150.0" prefWidth="150.0" styleClass="box" AnchorPane.rightAnchor="25.0">
+                           <children>
+                              <ImageView fx:id="imgoutput" fitHeight="140.0" fitWidth="140.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="3.4000000000000057" AnchorPane.leftAnchor="7.2" AnchorPane.rightAnchor="7.200000000000017" AnchorPane.topAnchor="7.0" />
+                           </children>
+                        </AnchorPane>
+                        <Label layoutX="75.0" layoutY="222.0" text="Input File" textAlignment="CENTER" textFill="#666666">
+                           <font>
+                              <Font name="Arial" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="404.0" layoutY="222.0" text="Output File" textAlignment="CENTER" textFill="#666666">
+                           <font>
+                              <Font name="Arial" size="13.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="arrow" fitHeight="108.0" fitWidth="166.0" layoutX="189.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/arrow.png" />
+                           </image>
+                           <effect>
+                              <DropShadow color="#2c8eff" offsetX="1.0" offsetY="1.0" />
+                           </effect>
+                        </ImageView>
+                        <HBox alignment="CENTER" layoutX="201.0" layoutY="118.0" prefHeight="38.0" prefWidth="118.0">
+                           <children>
+                              <Label fx:id="arrowtxt" text="Encode" textAlignment="CENTER" textFill="#ddfeff">
+                                 <font>
+                                    <Font name="Arial" size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="376.0" layoutY="242.0" prefHeight="28.0" prefWidth="118.0">
+                           <children>
+                              <Label fx:id="outname" textAlignment="CENTER" textFill="#666666">
+                                 <font>
+                                    <Font name="Calibri Light" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="42.0" layoutY="242.0" prefHeight="28.0" prefWidth="118.0">
+                           <children>
+                              <Label fx:id="inname" textAlignment="CENTER" textFill="#666666">
+                                 <font>
+                                    <Font name="Calibri Light" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Pane fx:id="arrowbutton" layoutX="201.0" layoutY="107.0" prefHeight="54.0" prefWidth="140.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

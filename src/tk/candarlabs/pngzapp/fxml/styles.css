@@ -1,0 +1,18 @@
+
+.box {
+    -fx-background-color: #c7cbcd;
+    -fx-background-radius: 10;
+}
+
+.box.drop {
+    -fx-background-color: #F4F4F4;
+
+}
+
+.arrow.blue{
+
+}
+
+.arrow.gray{
+
+}
