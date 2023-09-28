@@ -65,7 +65,7 @@
       </AnchorPane>
       <AnchorPane layoutY="445.0" prefHeight="28.0" prefWidth="750.0" style="-fx-background-color: #555555;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
-            <Label layoutX="20.0" layoutY="6.0" text="Candar Labs 2020" textFill="#e5e5e5">
+            <Label layoutX="20.0" layoutY="6.0" text="2020 @ Hakan Candar" textFill="#e5e5e5">
                <font>
                   <Font name="Arial" size="13.0" />
                </font>

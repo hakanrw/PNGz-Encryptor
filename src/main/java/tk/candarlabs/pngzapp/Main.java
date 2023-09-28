@@ -10,7 +10,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("fxml/main.fxml"));
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("fxml/main.fxml"));
         primaryStage.setTitle("PNGz Encryptor");
         Scene scene = UIFunctions.scene = new Scene(root, 750, 500);
         primaryStage.setScene(scene);

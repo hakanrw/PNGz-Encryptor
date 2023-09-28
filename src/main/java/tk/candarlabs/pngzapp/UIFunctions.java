@@ -25,7 +25,7 @@ import java.util.function.Function;
 class UIFunctions {
     static Scene scene = null;
     static boolean arrowIsBlue = false;
-    final static String DEFAULT_FILE_IMG = UIFunctions.class.getResource("img/file.png").toString();
+    final static String DEFAULT_FILE_IMG = UIFunctions.class.getClassLoader().getResource("img/file.png").toString();
     static HostServices hostServices = null;
 
     static void makeButton(Pane button, Function<Void, Void> pressFunc){
@@ -71,7 +71,7 @@ class UIFunctions {
 
         ImageView image = (ImageView) scene.lookup("#arrow");
         image.setEffect(dp);
-        image.setImage(new Image(UIFunctions.class.getResource("img/arrow.png").toString()));
+        image.setImage(new Image(UIFunctions.class.getClassLoader().getResource("img/arrow.png").toString()));
 
         ((Label) scene.lookup("#arrowtxt")).setText(text);
         arrowIsBlue = true;
@@ -80,7 +80,7 @@ class UIFunctions {
     static void setArrowGray(){
         ImageView image = (ImageView) scene.lookup("#arrow");
         image.setEffect(null);
-        image.setImage(new Image(UIFunctions.class.getResource("img/arrow-gray.png").toString()));
+        image.setImage(new Image(UIFunctions.class.getClassLoader().getResource("img/arrow-gray.png").toString()));
 
         ((Label) scene.lookup("#arrowtxt")).setText("Drop a File");
         arrowIsBlue = false;
@@ -94,11 +94,11 @@ class UIFunctions {
         Pane webButton = (Pane) scene.lookup("#webbutton");
         Pane aboutButton = (Pane) scene.lookup("#aboutbutton");
         makeButton(webButton, aVoid -> {
-            hostServices.showDocument("https://www.candarlabs.tk/");
+            hostServices.showDocument("https://hakan.candar.dev");
             return null;
         });
         makeButton(aboutButton, aVoid -> {
-            hostServices.showDocument("https://github.com/cpphpp/PNGZ-Encryptor");
+            hostServices.showDocument("https://github.com/hakanrw/PNGZ-Encryptor");
             return null;
         });
 

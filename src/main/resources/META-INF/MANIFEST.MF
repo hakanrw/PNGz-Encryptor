@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: tk.candarlabs.pngzapp.Main
+Class-Path: lib/tk.candarlabs.pngz.jar
+Created-By: Hakan Candar
